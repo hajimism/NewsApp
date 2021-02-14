@@ -1,0 +1,51 @@
+.container {
+  padding: 10px;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: white;
+  z-index: 1;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1.2s ease 0s 1 normal;
+  -webkit-animation: fadeIn 1.2s ease 0s 1 normal;
+}
+
+.header {
+  height: 53px;
+  vertical-align: middle;
+  white-space: nowrap;
+  align-items: center;
+  display: flex;
+
+  &__icon {
+    display: inline-block;
+    vertical-align: middle;
+    height: 50px;
+    width: 50px;
+    flex: 0 0 auto;
+    border-radius: 50%;
+    padding: 14px;
+    &:hover {
+      background: rgba(77, 77, 77, 0.6);
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}

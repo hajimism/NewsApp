@@ -1,0 +1,31 @@
+.contents {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.main {
+  flex: 6;
+}
+
+.nav {
+  flex: 2;
+  position: fixed;
+}
+
+.blank {
+  flex: 2;
+}
+
+.aside {
+  flex: 3;
+}
+
+@media screen and (max-width: 780px) {
+  .contents {
+    flex-direction: column;
+  }
+  .blank {
+    display: none;
+  }
+}
